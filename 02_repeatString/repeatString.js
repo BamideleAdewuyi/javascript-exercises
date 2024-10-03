@@ -1,9 +1,14 @@
 const repeatString = function(string, num) {
-    let toReturn = "";
-    for (i = 1; i <= num; i++) {
-        toReturn+= string;
+    if (num < 0) {
+        return "ERROR";
     }
-    return toReturn;
+    else {
+        let toReturn = "";
+        for (i = 1; i <= num; i++) {
+            toReturn+= string;
+        }
+        return toReturn;
+    }
 };
 
 // Do not edit below this line
