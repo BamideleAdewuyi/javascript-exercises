@@ -1,7 +1,6 @@
 const removeFromArray = function() {
     let arr = arguments[0];
     let removals = [];
-    let newArr = [];
     for (i = 1; i < arguments.length; i++) {
         removals.push(arguments[i]);
     }
