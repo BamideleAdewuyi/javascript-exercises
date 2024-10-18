@@ -19,8 +19,9 @@ const power = function(a, b) {
 };
 
 const factorial = function(a) {
+  let fact = 1;
 	for (i = a; i > 0; i--) {
-    let fact = reduce(((product, current) => product * i), 1);
+    fact = reduce(((product, current) => product * i), 1);
   }
   return fact;
 };
