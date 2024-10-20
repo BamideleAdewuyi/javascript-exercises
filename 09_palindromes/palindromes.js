@@ -1,7 +1,9 @@
 const palindromes = function (str) {
-    const punctuationless = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"");
+    const punctuationless = str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase();
     let arr = punctuationless.split("");
-    if  (arr == arr.reverse()) {
+    arr.reverse();
+    const strReverse = arr.join("");
+    if  (punctuationless == strReverse) {
         return true;
     }
     else {
