@@ -3,12 +3,7 @@ const palindromes = function (str) {
     let arr = punctuationless.split("");
     arr.reverse();
     const strReverse = arr.join("");
-    if  (punctuationless == strReverse) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return punctuationless === strReverse;
 };
 
 // Do not edit below this line
